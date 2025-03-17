@@ -1,58 +1,21 @@
-# Welcome to your Lovable project
+# SecureFile
 
-## Project info
+SecureFile, tamamen istemci tarafında çalışan, güvenli dosya şifreleme ve şifre çözme uygulamasıdır. Dosyalarınız hiçbir zaman cihazınızı terk etmez ve tüm işlemler tarayıcınızda gerçekleşir.
 
-**URL**: https://lovable.dev/projects/d98b82be-300c-4c97-8aae-d52bcdf4da8e
+![SecureFile Logo](public/favicon.svg)
 
-## How can I edit this code?
+## Özellikler
 
-There are several ways of editing your application.
+- **Güçlü Şifreleme**: AES-256-GCM şifreleme algoritması kullanarak dosyalarınızı güvenle koruyun
+- **İstemci Tarafında İşlem**: Tüm şifreleme ve şifre çözme işlemleri tarayıcınızda gerçekleşir, dosyalarınız hiçbir sunucuya yüklenmez
+- **Sıfır Veri Saklaması**: Şifreleriniz veya dosyalarınız saklanmaz veya kaydedilmez
+- **Çoklu Dosya Desteği**: Birden fazla dosyayı aynı anda işleyebilme
+- **Çok Çeşitli Format Desteği**: Belgeler, görseller, arşivler, ses ve video dosyaları dahil olmak üzere çok sayıda dosya formatını destekler
+- **Modern, Kullanıcı Dostu Arayüz**: Sürükle-bırak özelliği ve modern tasarımla kolay kullanım
 
-**Use Lovable**
+## Teknolojiler
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d98b82be-300c-4c97-8aae-d52bcdf4da8e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
+Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
 
 - Vite
 - TypeScript
@@ -60,10 +23,53 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Nasıl Çalışır?
 
-Simply open [Lovable](https://lovable.dev/projects/d98b82be-300c-4c97-8aae-d52bcdf4da8e) and click on Share -> Publish.
+1. **Şifreleme**: 
+   - "Şifrele" sekmesini seçin
+   - Şifrelemek istediğiniz dosyaları sürükleyip bırakın veya seçin
+   - Güçlü bir şifre belirleyin ve onaylayın
+   - "Dosyaları Şifrele" butonuna tıklayın
+   - Şifrelenmiş .enc dosyalarınızı indirin
 
-## I want to use a custom domain - is that possible?
+2. **Şifre Çözme**:
+   - "Şifre Çöz" sekmesini seçin
+   - .enc dosyalarınızı sürükleyip bırakın veya seçin
+   - Şifreleme yaparken kullandığınız şifreyi girin
+   - "Dosyaların Şifresini Çöz" butonuna tıklayın
+   - Orijinal dosyalarınızı indirin
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Güvenlik Özellikleri
+
+- **AES-256-GCM**: Hükümetler ve finansal kurumlar tarafından kullanılan, son derece güvenli şifreleme algoritması
+- **PBKDF2 Anahtar Türetme**: Rastgele salt ile brute-force saldırılarına karşı koruma
+- **Uçtan Uca Şifreleme**: Tüm işlemler tarayıcınızda gerçekleşir, hiçbir veri iletilmez
+- **Dosya Bütünlüğü**: GCM modu, şifrelenmiş dosyaların değiştirilip değiştirilmediğini doğrulamak için kimlik doğrulama sağlar
+
+## Proje Kurulumu
+
+```sh
+# 1. Repository'yi klonlayın
+git clone https://github.com/gokmency/SecureFile.git
+
+# 2. Proje dizinine gidin
+cd SecureFile
+
+# 3. Gerekli bağımlılıkları yükleyin
+npm install
+
+# 4. Geliştirme sunucusunu başlatın
+npm run dev
+```
+
+## Katkıda Bulunma
+
+Katkılara açığız! Lütfen bir pull request gönderin veya öneriniz için bir issue açın.
+
+## Lisans
+
+MIT
+
+## İletişim
+
+Twitter: [@gokmeneth](https://twitter.com/gokmeneth)
