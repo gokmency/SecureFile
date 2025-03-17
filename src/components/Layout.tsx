@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children, className }) => {
         <p className="mb-3 max-w-lg mx-auto">All encryption happens in your browser. Your files never leave your device.</p>
         
         <div className="flex items-center justify-center gap-4 text-xs mt-4 text-muted-foreground/70">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="https://github.com/gokmency/SecureFile" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Github className="h-3.5 w-3.5" />
             <span>Source Code</span>
           </a>
