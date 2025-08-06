@@ -70,6 +70,7 @@ Katkılara açığız! Lütfen bir pull request gönderin veya öneriniz için b
 
 MIT
 
+
 ## İletişim
 
-Twitter: [@gokmeneth](https://twitter.com/gokmeneth)
+Twitter: [@gokmeneth](https://twitter.com/gokmeneth) 
