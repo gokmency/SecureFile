@@ -73,4 +73,4 @@ MIT
 
 ## İletişim
 
-Twitter: [@gokmeneth](https://twitter.com/gokmeneth) 
+Twitter: [@gokmeneth](https://twitter.com/gokmeneth) testt
